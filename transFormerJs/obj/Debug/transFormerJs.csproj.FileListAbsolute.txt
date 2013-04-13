@@ -1,0 +1,5 @@
+C:\Users\Eystein\Documents\Visual Studio 2012\Projects\transFormerJs\transFormerJs\bin\transFormerJs.dll
+C:\Users\Eystein\Documents\Visual Studio 2012\Projects\transFormerJs\transFormerJs\bin\transFormerJs.pdb
+C:\Users\Eystein\Documents\Visual Studio 2012\Projects\transFormerJs\transFormerJs\obj\Debug\transFormerJs.csprojResolveAssemblyReference.cache
+C:\Users\Eystein\Documents\Visual Studio 2012\Projects\transFormerJs\transFormerJs\obj\Debug\transFormerJs.dll
+C:\Users\Eystein\Documents\Visual Studio 2012\Projects\transFormerJs\transFormerJs\obj\Debug\transFormerJs.pdb
