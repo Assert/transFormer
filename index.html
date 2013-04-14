@@ -37,9 +37,19 @@
 
 <p>You can also make JSON-objects directly from your form-elements. Make objects that contain data, arrays and other objects just the way you want them without any code required. All you might need are some declarative attributes in your form-elements.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<pre><code>var json = {
+    name: "Bob Doe",
+    country: "Norway",
+    age : "31"
+};
+transFormer.bind(json);
+</code></pre>
+
+<p>The bind function will look for HTML-elements with matching IDs. Like the one below:</p>
+
+<pre><code>    &lt;h2 id="name"&gt;&lt;/h2&gt;
+    &lt;div id="country"&gt;&lt;/div&gt;
+    &lt;div id="age"&gt;&lt;/div&gt;
 </code></pre>
 
 <p>Get your copy of transFormer.js from GitHub or Nuget.</p>
