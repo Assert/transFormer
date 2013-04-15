@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>transFormer Example</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="Scripts/transFormer.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var json = {
+                name: "Bob Doe",
+                country: "Norway",
+                age : "31"
+            };
+            transFormer.bind(json);
+        });
+    </script>
+</head>
+
+<body>
+    <h1>transFormer Example</h1>
+    <h2 class="name"></h2>
+    <div class="country"></div>
+    <div class="age"></div>
+    <br/>
+    <h2 class="name"></h2>
+    <div class="country"></div>
+    <div class="age"></div>
+    <br/>
+
+
+</body>
+</html>

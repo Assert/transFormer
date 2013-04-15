@@ -7,7 +7,7 @@
     <script src="Scripts/transFormer.js"></script>
     <script type="text/javascript">
         $(function () {
-            var searchQuery = "code";
+            var searchQuery = "Formula 1";
             $.ajax({
                 type: "GET",
                 contentType: "application/json; charset=utf-8",
@@ -15,36 +15,38 @@
                 data: "q=" + searchQuery,
                 dataType: "jsonp",
                 success: function (json) {
-                    transFormer.bindToTemplate(json.results, "myTemplate", "myDestination");
+                    bind(json);
                 }
             });
         });
+
+        function bind(data) {
+            transFormer.bind(data.results[0]);
+        }
     </script>
     
     <style type="text/css">
         body { font-family: 'Verdana';color: #333; background-color: #3333FF}
         h1{color:black}
         h2{color:white}
-        .twitterCard { width: 300px; border: solid 1px black; border-radius: 5px; padding: 4px;background-color: #4099FF; box-shadow: 10px 10px 5px #666;float: left;min-height: 260px;  }
-        .profile_image_url { float: right; width: 60px }
-        .from_user_name {font-weight: bold}
-        .text { padding-bottom: 5px }
+        .twitterCard { width: 300px; border: solid 1px black; border-radius: 5px; padding: 4px;background-color: #4099FF; box-shadow: 10px 10px 5px #666;  }
+        #profile_image_url { float: right; width: 60px }
+        #from_user_name {font-weight: bold}
+        #text { padding-bottom: 5px }
     </style>
+
 </head>
 
 <body>
     <h1>transFormer Example</h1>
     Lets bind the Twitter feed to our simple HTML markup
-    
-    <div id="myDestination"></div>
-    
-    <div id="myTemplate" class="twitterCard">
+    <div class="twitterCard">
         <h2>Twitter card</h2>
-        <img class="profile_image_url" alt="Profile image" src="#" />
-        <div class="from_user_name"></div>
-        <div class="text"></div>
-        <div class="created_at"></div>
-        <div class="result_type" data-object="metadata"></div>
+        <img id="profile_image_url" alt="Profile image" src="#" />
+        <div id="from_user_name"></div>
+        <div id="text"></div>
+        <div id="created_at"></div>
+        <div id="result_type" data-object="metadata"></div>
     </div>
     
 </body>
